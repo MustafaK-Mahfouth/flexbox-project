@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ركن</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header__container--logoh1">
+          <img
+            src="./img/logo.png"
+            alt="logo img"
+            class="header__logo"
+            height="55px"
+            width="80px"
+          />
+
+          <h1 class="header__h1">ركن</h1>
+        </div>
+        <form class="header__search" role="search">
+          <input
+            type="text"
+            class="header__search--input"
+            placeholder="ابحث عن مساحة"
+            aria-label="ابحث عن مساحة"
+          />
+
+          <button class="header__search--button" type="submit" aria-label="بحث">
+            <svg
+              class="header__search--icon"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="m17 17l4 4M3 11a8 8 0 1 0 16 0a8 8 0 0 0-16 0"
+              />
+            </svg>
+          </button>
+        </form>
+
+        <div class="header__notification">
+          <div class="header__notification-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <title>bell-notification</title>
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M18.134 11C18.715 16.375 21 18 21 18H3s3-2.133 3-9.6c0-1.697.632-3.325 1.757-4.525S10.41 2 12 2q.507 0 1 .09M19 8a3 3 0 1 0 0-6a3 3 0 0 0 0 6m-5.27 13a2 2 0 0 1-3.46 0"
+              />
+              <span class="header__notification-count">8</span>
+            </svg>
+          </div>
+
+          <div class="header__notification-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="none"
+                stroke="#000000"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M3.464 16.828C2 15.657 2 14.771 2 11c0-3.771 0-5.657 1.464-6.828C4.93 3 7.286 3 12 3c4.714 0 7.071 0 8.535 1.172C22 5.343 22 7.229 22 11c0 3.771 0 4.657-1.465 5.828C19.072 18 16.714 18 12 18c-2.51 0-3.8 1.738-6 3v-3.212c-1.094-.163-1.899-.45-2.536-.96Z"
+              />
+              <span class="header__notification-count">6</span>
+            </svg>
+          </div>
+
+          <img
+            src="./img/person2.jpg"
+            alt="person"
+            class="header__notification--img"
+          />
+          <p class="user-name">أحمد</p>
+
+          <svg
+            width="10"
+            height="10"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 14 14"
+          >
+            <path
+              fill="none"
+              stroke="#000000"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M.5 3.85L6.65 10a.48.48 0 0 0 .7 0l6.15-6.15"
+            />
+          </svg>
+        </div>
+      </header>
+      <div class="content">
+        <nav class="sidebar">
+          <ul class="sidebar__list">
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill="#ffffff"
+                    d="M8 20H3V10H0L10 0l10 10h-3v10h-5v-6H8v6z"
+                  />
+                </svg>
+                المساحات</a
+              >
+            </li>
+
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill="#ffffff"
+                    fill-rule="evenodd"
+                    d="M.327 2.64C0 3.282 0 4.12 0 5.8v2.4c0 1.68 0 2.52.327 3.16a3.02 3.02 0 0 0 1.31 1.31c.642.327 1.48.327 3.16.327h1.2v1.5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-1a.5.5 0 0 1-.5-.5v-1.5h1.2c1.68 0 2.52 0 3.16-.327a3 3 0 0 0 1.31-1.31c.327-.642.327-1.48.327-3.16V5.8c0-1.68 0-2.52-.327-3.16a3 3 0 0 0-1.31-1.31c-.642-.327-1.48-.327-3.16-.327h-6.4c-1.68 0-2.52 0-3.16.327a3.02 3.02 0 0 0-1.31 1.31m10.9-.638h-6.4c-.857 0-1.44 0-1.89.038c-.438.035-.663.1-.819.18a2 2 0 0 0-.874.874c-.08.156-.145.38-.18.819c-.037.45-.038 1.03-.038 1.89v2.4c0 .857.001 1.44.038 1.89c.036.438.101.663.18.819c.192.376.498.682.874.874c.156.08.381.145.819.18c.45.036 1.03.037 1.89.037h6.4c.857 0 1.44 0 1.89-.037c.438-.036.663-.101.819-.18c.376-.192.682-.498.874-.874c.08-.156.145-.381.18-.82c.037-.45.038-1.03.038-1.89v-2.4c0-.856-.001-1.44-.038-1.89c-.036-.437-.101-.662-.18-.818a2 2 0 0 0-.874-.874c-.156-.08-.381-.145-.819-.18c-.45-.037-1.03-.038-1.89-.038"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                الغرف</a
+              >
+            </li>
+
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 48 48"
+                  fill="#ffffff"
+                >
+                  <mask id="ipSTrophy0">
+                    <g
+                      fill="none"
+                      stroke="#ffffff"
+                      stroke-linejoin="round"
+                      stroke-width="4"
+                    >
+                      <path
+                        fill="#ffffff"
+                        d="M24 30c6.627 0 12-5.53 12-12.353V4H12v13.647C12 24.47 17.373 30 24 30Z"
+                      />
+                      <path
+                        stroke-linecap="round"
+                        d="M12 21V11H4c0 6.667 4 10 8 10Zm24 0V11h8c0 6.667-4 10-8 10Z"
+                        clip-rule="evenodd"
+                      />
+                      <path stroke-linecap="round" d="M24 32v4" />
+                      <path fill="#ffffff" d="m15 42l3.69-6h10.352L33 42H15Z" />
+                    </g>
+                  </mask>
+                  <path
+                    fill="#ffffff"
+                    d="M0 0h48v48H0z"
+                    mask="url(#ipSTrophy0)"
+                  />
+                </svg>
+                الاشتراكات</a
+              >
+            </li>
+
+            <li class="sidebar__item">
+              <a href="#" class="sidebar__link">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="#ffffff"
+                    d="m21.484 7.125l-9.022-5a1.003 1.003 0 0 0-.968 0l-8.978 4.96a1 1 0 0 0-.003 1.748l9.022 5.04a.995.995 0 0 0 .973.001l8.978-5a1 1 0 0 0-.002-1.749z"
+                  />
+                  <path
+                    fill="#ffffff"
+                    d="m12 15.856l-8.515-4.73l-.971 1.748l9 5a1 1 0 0 0 .971 0l9-5l-.971-1.748L12 15.856z"
+                  />
+                  <path
+                    fill="#ffffff"
+                    d="m12 19.856l-8.515-4.73l-.971 1.748l9 5a1 1 0 0 0 .971 0l9-5l-.971-1.748L12 19.856z"
+                  />
+                </svg>
+                الفعاليات</a
+              >
+            </li>
+          </ul>
+          <div class="sidebar__footer">
+            <p>ركن — مساحة لأفكارك وإنجازك.</p>
+            <p>© 2026 ركن. جميع الحقوق محفوظة.</p>
+          </div>
+        </nav>
+        <main class="room-view">
+          <div class="gallary">
+            <img class="item" src="/img/pic1.png" alt="room" />
+            <img class="item" src="/img/pic2.png" alt="room" />
+            <img class="item" src="/img/pic3.png" alt="room" />
+          </div>
+
+          <div class="overview">
+            <div class="overview__title">
+              <p class="overview--name">مساحة ركن</p>
+              <p class="rating--stars">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    fill="#286334"
+                    d="M512 207.9H315.1L256 11l-59.1 196.9H0l157.5 108.3l-59 187.1L256 404.8l157.5 98.5l-59-187.1z"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    fill="#286334"
+                    d="M512 207.9H315.1L256 11l-59.1 196.9H0l157.5 108.3l-59 187.1L256 404.8l157.5 98.5l-59-187.1z"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    fill="#286334"
+                    d="M512 207.9H315.1L256 11l-59.1 196.9H0l157.5 108.3l-59 187.1L256 404.8l157.5 98.5l-59-187.1z"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    fill="#286334"
+                    d="M512 207.9H315.1L256 11l-59.1 196.9H0l157.5 108.3l-59 187.1L256 404.8l157.5 98.5l-59-187.1z"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    fill="#286334"
+                    d="M512 207.9H315.1L256 11l-59.1 196.9H0l157.5 108.3l-59 187.1L256 404.8l157.5 98.5l-59-187.1z"
+                  />
+                </svg>
+              </p>
+            </div>
+            <div class="overview__meta">
+              <p class="overview--location--box">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="#286334"
+                    d="M19 9A7 7 0 1 0 5 9c0 1.387.409 2.677 1.105 3.765h-.008L12 22l5.903-9.235h-.007A6.971 6.971 0 0 0 19 9zm-7 3a3 3 0 1 1 0-6a3 3 0 0 1 0 6z"
+                  />
+                </svg>
+                <span class="overview--location">رام الله</span>
+              </p>
+
+              <div class="overview__meta--ratingnumber">
+                <p class="rating-value">9.4</p>
+                <p class="rating-numbers">81 تقييم</p>
+              </div>
+            </div>
+          </div>
+          <div class="details">
+            <div class="features">
+              <h1 class="features__header">مساحتك للتركيز والإنجاز</h1>
+              <p class="features__descreption">
+                مساحة ركن هي المكان المثالي للدراسة والعمل في أجواء مريحة
+                وهادئة. نوفر لك كل ما تحتاجه لتكون أكثر إنتاجية، من مكاتب مريحة
+                وإنترنت سريع إلى غرف اجتماعات وقهوة مميزة تُحضّر بعناية، وسط
+                مجتمع ملهم من الطلاب والمهنيين.
+              </p>
+
+              <div class="features__advantages">
+                <div class="features__advantages-col1">
+                  <ul class="features__advantages--list">
+                    <li class="features__advantages--item">
+                      <svg
+                        width="16"
+                        height="16"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 14 14"
+                      >
+                        <path
+                          fill="none"
+                          stroke="#286334"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M10.15.5L4 6.65a.48.48 0 0 0 0 .7l6.15 6.15"
+                        />
+                      </svg>
+                      إنترنت سريع
+                    </li>
+                    <li class="features__advantages--item">
+                      <svg
+                        width="16"
+                        height="16"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 14 14"
+                      >
+                        <path
+                          fill="none"
+                          stroke="#286334"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M10.15.5L4 6.65a.48.48 0 0 0 0 .7l6.15 6.15"
+                        />
+                      </svg>
+                      مكاتب مريحة
+                    </li>
+                    <li class="features__advantages--item">
+                      <svg
+                        width="16"
+                        height="16"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 14 14"
+                      >
+                        <path
+                          fill="none"
+                          stroke="#286334"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M10.15.5L4 6.65a.48.48 0 0 0 0 .7l6.15 6.15"
+                        />
+                      </svg>
+                      غرف اجتماعات
+                    </li>
+                    <li class="features__advantages--item">
+                      <svg
+                        width="16"
+                        height="16"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 14 14"
+                      >
+                        <path
+                          fill="none"
+                          stroke="#286334"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M10.15.5L4 6.65a.48.48 0 0 0 0 .7l6.15 6.15"
+                        />
+                      </svg>
+                      أجواء هادية
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="features__advantages-col2">
+                  <ul class="features__advantages--list">
+                    <li class="features__advantages--item">
+                      <svg
+                        width="16"
+                        height="16"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 14 14"
+                      >
+                        <path
+                          fill="none"
+                          stroke="#286334"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M10.15.5L4 6.65a.48.48 0 0 0 0 .7l6.15 6.15"
+                        />
+                      </svg>
+                      قهوة ومشروبات
+                    </li>
+                    <li class="features__advantages--item">
+                      <svg
+                        width="16"
+                        height="16"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 14 14"
+                      >
+                        <path
+                          fill="none"
+                          stroke="#286334"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M10.15.5L4 6.65a.48.48 0 0 0 0 .7l6.15 6.15"
+                        />
+                      </svg>
+                      مقابس بكل مكتب
+                    </li>
+                    <li class="features__advantages--item">
+                      <svg
+                        width="16"
+                        height="16"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 14 14"
+                      >
+                        <path
+                          fill="none"
+                          stroke="#286334"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M10.15.5L4 6.65a.48.48 0 0 0 0 .7l6.15 6.15"
+                        />
+                      </svg>
+                      حجز بالساعة
+                    </li>
+                    <li class="features__advantages--item">
+                      <svg
+                        width="16"
+                        height="16"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 14 14"
+                      >
+                        <path
+                          fill="none"
+                          stroke="#286334"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M10.15.5L4 6.65a.48.48 0 0 0 0 .7l6.15 6.15"
+                        />
+                      </svg>
+                      اشتراكات شهرية
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="features__recommend">
+                <p>أصحابك بنصحوا بهالمساحة</p>
+
+                <div class="features__friends">
+                  <img
+                    class="features__friend"
+                    src="img/person1.png"
+                    alt="صديق"
+                  />
+                  <img
+                    class="features__friend"
+                    src="img/person3.png"
+                    alt="صديق"
+                  />
+                  <img
+                    class="features__friend"
+                    src="img/person4.png"
+                    alt="صديق"
+                  />
+                  <img
+                    class="features__friend"
+                    src="img/person5.png"
+                    alt="صديق"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="comments">
+              <div class="comments__comment">
+                <p class="comments__comment--story">
+                  أجواء هادئة جدا ومناسبة للدراسة والعمل، مرتب ومريح والخدمة
+                  ممتازة أنصح فيه بشدة!
+                </p>
+                <div class="comments__comment--footer">
+                  <div class="comments__comment--footer--arrange">
+                    <img
+                      src="/img/person6.png"
+                      alt="person"
+                      class="comments__comment--img"
+                    />
+                    <div class="comments__comment--user">
+                      <p class="comments__comment--name">خالد</p>
+
+                      <p class="comments__comment--date">12 مايو 2026</p>
+                    </div>
+                  </div>
+                  <p class="comments__comment--rating">9.5</p>
+                </div>
+              </div>
+
+              <div class="comments__comment">
+                <p class="comments__comment--story">
+                  حجزت غرفة اجتماعات لفريقي، وكانت مجهزة ومرتبة. الحجز سهل
+                  والموظفين متعاونين، تجربة بنكررها!
+                </p>
+                <div class="comments__comment--footer">
+                  <div class="comments__comment--footer--arrange">
+                    <img
+                      src="img/person7.png"
+                      alt="صورة سارة"
+                      class="comments__comment--img"
+                    />
+                    <div class="comments__comment--user">
+                      <p class="comments__comment--name">سارة</p>
+                      <p class="comments__comment--date">3 يونيو 2026</p>
+                    </div>
+                  </div>
+                  <p class="comments__comment--rating">9.0</p>
+                </div>
+              </div>
+              <div class="comments__div">
+                <a href="#" class="comments__button">
+                  <span>كل التقييمات</span>
+                  <svg
+                    class="comments__button--arrow"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M5 12h14m-6-6 6 6-6 6"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <footer class="footer">
+            <p class="footer__p">في 6 مقاعد متاحة اليوم</p> 
+            
+            <button class="footer__button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="#ffffff"
+                  fill-rule="evenodd"
+                  d="M14 4v-.994C14 2.45 13.55 2 12.994 2H11v1h-1V2H6v1H5V2H3.006C2.45 2 2 2.45 2 3.006v9.988C2 13.55 2.45 14 3.006 14h9.988C13.55 14 14 13.55 14 12.994V5H2V4zm-3-3h1.994C14.102 1 15 1.897 15 3.006v9.988A2.005 2.005 0 0 1 12.994 15H3.006A2.005 2.005 0 0 1 1 12.994V3.006C1 1.898 1.897 1 3.006 1H5V0h1v1h4V0h1zM4 7h2v1H4zm3 0h2v1H7zm3 0h2v1h-2zM4 9h2v1H4zm3 0h2v1H7zm3 0h2v1h-2zm-6 2h2v1H4zm3 0h2v1H7zm3 0h2v1h-2z"
+                />
+              </svg>
+              احجز مقعدك
+            </button>
+          </footer>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
