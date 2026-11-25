@@ -1,0 +1,50 @@
+:root {
+  --color-primary: #075033;
+  --color-primary-light: #477e48;
+  --color-primary-dark: #09271b;
+
+  --color-sidebar: #123323;
+  --color-rating: #286334;
+  --color-button: #0d5039;
+
+  --color-background-light: #68866b;
+  --color-background-medium: #476a51;
+  --color-background-dark: #284d3c;
+
+  --color-content: #f5f3ec;
+  --color-header: #fdfcf8;
+  --color-card: #fffefb;
+  --color-search: #efeeea;
+
+  --color-text: #51525a;
+  --color-text-muted: #777980;
+  --color-white: #ffffff;
+
+  --color-border: #dedfdb;
+  --color-quote: #e9eadf;
+
+  --shadow-card: 0 2rem 6rem rgba(25, 45, 30, 0.08);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url(../img/green-background.png);
+  background-size: cover;
+  font-family: "Tajawal", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+
